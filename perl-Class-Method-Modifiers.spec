@@ -8,13 +8,13 @@
 Summary:	Class::Method::Modifiers - provides Moose-like method modifiers
 #Summary(pl.UTF-8):	
 Name:		perl-Class-Method-Modifiers
-Version:	1.01
+Version:	1.02
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	f0398c468025d21493745619b1114a46
+# Source0-md5:	8f7564176826b01f5b1deab8a73646d3
 URL:		http://search.cpan.org/dist/Class-Method-Modifiers/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
