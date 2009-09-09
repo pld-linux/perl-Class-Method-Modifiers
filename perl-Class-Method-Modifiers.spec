@@ -6,15 +6,14 @@
 %define	pdir	Class
 %define	pnam	Method-Modifiers
 Summary:	Class::Method::Modifiers - provides Moose-like method modifiers
-#Summary(pl.UTF-8):	
+Summary(pl.UTF-8):	Class::Method::Modifiers - dostarcza modyfikatory metod na kształt Moose
 Name:		perl-Class-Method-Modifiers
-Version:	1.02
+Version:	1.04
 Release:	1
-# same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8f7564176826b01f5b1deab8a73646d3
+# Source0-md5:	bf278d379903849d492ab975d6504cbe
 URL:		http://search.cpan.org/dist/Class-Method-Modifiers/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -36,8 +35,8 @@ is run in place of the original method, with a hook to easily call
 that original method.  See the MODIFIERS section for more details on
 how the particular modifiers work.
 
-# %description -l pl.UTF-8
-# TODO
+%description -l pl.UTF-8
+Class::Method::Modifiers - dostarcza modyfikatory metod na kształt Moose
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
