@@ -6,7 +6,7 @@
 %define	pdir	Class
 %define	pnam	Method-Modifiers
 Summary:	Class::Method::Modifiers - provides Moose-like method modifiers
-Summary(pl.UTF-8):	Class::Method::Modifiers - dostarcza modyfikatory metod na kształt Moose
+Summary(pl.UTF-8):	Class::Method::Modifiers - modyfikatory metod na kształt Moose
 Name:		perl-Class-Method-Modifiers
 Version:	2.11
 Release:	1
@@ -32,11 +32,18 @@ Class::Method::Modifiers provides three modifiers: before, around,
 and after. before and after are run just before and after the method
 they modify, but can not really affect that original method. around
 is run in place of the original method, with a hook to easily call
-that original method.  See the MODIFIERS section for more details on
-how the particular modifiers work.
+that original method.
 
 %description -l pl.UTF-8
-Class::Method::Modifiers - dostarcza modyfikatory metod na kształt Moose
+W najprostszej postaci, modyfikator metody to metoda wywołująca
+$self->SUPER::foo(@_).
+
+Moduł Class::Method::Modifiers dostarcza trzy modyfikatory: before,
+around oraz after. Modyfikatory before oraz after są wywoływane
+bezpośrednio przed i bezpośrednio po modyfikowanej metodzie, ale nie
+mogą wpływać na oryginalną metodę. Modyfikator around jest wywoływany
+zamiast oryginalnej metody z uchwytem do łatwego wywołania tej
+oryginalnej metody. 
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -60,5 +67,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_vendorlib}/Class/Method/*.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/Class/Method/Modifiers.pm
+%{_mandir}/man3/Class::Method::Modifiers.3pm*
