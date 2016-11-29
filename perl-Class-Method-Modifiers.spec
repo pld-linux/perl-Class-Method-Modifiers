@@ -10,6 +10,7 @@ Summary(pl.UTF-8):	Class::Method::Modifiers - modyfikatory metod na kształt Moo
 Name:		perl-Class-Method-Modifiers
 Version:	2.12
 Release:	1
+# same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,8 +19,9 @@ URL:		http://search.cpan.org/dist/Class-Method-Modifiers/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-MRO-Compat
-BuildRequires:	perl-Test-Exception
+BuildRequires:	perl-Test-Fatal
+BuildRequires:	perl-Test-Requires
+BuildRequires:	perl-Test-Simple >= 0.88
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
