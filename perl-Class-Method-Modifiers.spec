@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Class
 %define	pnam	Method-Modifiers
 Summary:	Class::Method::Modifiers - provides Moose-like method modifiers
