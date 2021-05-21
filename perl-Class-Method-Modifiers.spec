@@ -14,11 +14,14 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Class/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	b1398e3682aa2e075b913b9f9000b596
-URL:		http://search.cpan.org/dist/Class-Method-Modifiers/
+URL:		https://metacpan.org/release/Class-Method-Modifiers
+BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Test-Fatal
+BuildRequires:	perl-Test-Needs
 BuildRequires:	perl-Test-Requires
 BuildRequires:	perl-Test-Simple >= 0.88
 %endif
